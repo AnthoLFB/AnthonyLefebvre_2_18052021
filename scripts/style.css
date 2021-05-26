@@ -1,0 +1,189 @@
+/*--- Définition de la police du site ---*/
+@font-face 
+{
+    font-family: 'Raleway';
+    src: url('../polices/Raleway/Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'RalewayBold';
+    src: url('../polices/Raleway/Raleway-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*--- Mise en forme du body ---*/
+body
+{
+    margin: 0 4em 0 4em;
+    font-family: "Raleway", sans-serif;
+}
+
+/*--- Définition de la police pour les titres ---*/
+h1, h2
+{
+    font-family: "RalewayBold", sans-serif;
+}
+
+/*--- Mise en forme de la nav barre ---*/
+
+nav 
+{
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+nav img
+{
+    margin-top: 1.5em;
+    width: 8em;
+}
+
+nav, ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li
+{
+    padding: 2em;
+}
+
+nav ul li:first-child 
+{
+ border-top: 3px Solid #0065FC;
+}
+
+nav ul li:first-child a
+{
+ color:#0065FC;
+}
+
+nav ul li:last-child a
+{
+ font-family: "RalewayBold";
+ color:#0065FC;
+}
+
+nav ul li a
+{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+nav ul li:hover
+{
+    color: #0065FC;
+    border-top: 3px Solid #0065FC;
+}
+
+
+h1
+{
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+p
+{
+    font-size: 1.25em;
+}
+
+/*--- Mise en forme du formulaire ---*/
+form, input, .fa-map-marker-alt
+{
+    font-family: "RalewayBold";
+    font-size: 1.1em;
+    border: none;
+}
+
+form
+{
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    height: 50px;
+    margin: 1.5em 0 1.5em 0;
+    border: 1px Solid #D9D9D9;
+    border-radius: 1em;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*Logo position formulaire de recherche*/
+.fa-map-marker-alt
+{
+    padding: 20px;
+    background-color: #D9D9D9;
+    margin-right: 1em;
+}
+
+/* Mise en forme du champs texte */
+input[type="text"], input[type="text"]::placeholder
+{
+    font-weight: bold;
+    color: #000000;
+    width: 210px;
+}
+
+input[type="submit"]
+{
+    width: 140px;
+    height: 50px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+
+/*--- Mise en forme de la liste des filtres ---*/
+.filtres 
+{
+    margin: 2em 0 2em 0;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filtres li
+{
+    font-family: "RalewayBold";
+}
+
+.filtres li:not(:first-of-type)
+{
+    border: 2px solid #D9D9D9;
+    border-radius: 3em;
+    text-align: center;
+    padding-right: 2em;
+    overflow: hidden;
+}
+
+/* Mise en forme des logo*/
+.filtres i
+{
+    color: #0065FC;
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 4em;
+    margin-right: 1em;
+}
+
+/* Mise en forme des liens */
+.filtres li a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*--- Mise en forme de la phrase annoncçant les résultats ---*/
+.fa-info
+{
+    color: #0065FC;
+    padding: 10px 16px 10px 16px ;
+    border: 2px Solid #D9D9D9;
+    border-radius: 3em;
+}

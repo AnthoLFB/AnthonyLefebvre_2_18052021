@@ -172,6 +172,12 @@ input[type="submit"]
     margin-right: 1em;
 }
 
+/* Correction pour le logo "Familial" (S'affiche mal si on reste une un padding de 15px)*/
+.filtres .fa-child
+{
+    padding: 15px 18px 15px 18px;
+}
+
 /* Mise en forme des liens */
 .filtres li a
 {

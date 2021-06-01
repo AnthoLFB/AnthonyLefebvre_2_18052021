@@ -162,6 +162,12 @@ input[type="submit"]
     overflow: hidden;
 }
 
+.filtres li:not(:first-of-type):hover
+{
+    border-color: #0065FC;
+
+}
+
 /* Mise en forme des logo*/
 .filtres i
 {

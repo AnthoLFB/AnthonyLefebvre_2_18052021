@@ -1,4 +1,4 @@
-/*--- Définition de la police du site ---*/
+/*--- Définition des polices utilisées pour le site ---*/
 @font-face 
 {
     font-family: 'Raleway';
@@ -26,7 +26,6 @@ body
 h1, h2 {font-family: "RalewayBold", sans-serif;}
 
 /*--- Mise en forme de la nav barre ---*/
-
 nav 
 {
     justify-content: space-between;
@@ -69,7 +68,6 @@ nav ul li:hover
     color: #0065FC;
     border-top: 3px Solid #0065FC;
 }
-
 
 h1
 {

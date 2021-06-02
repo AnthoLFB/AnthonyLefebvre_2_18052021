@@ -1,4 +1,4 @@
-/*--- Définition de la police du site ---*/
+/*--- Définition des polices utilisées pour le site ---*/
 @font-face 
 {
     font-family: 'Raleway';
@@ -29,7 +29,6 @@ h1, h2
 }
 
 /*--- Mise en forme de la nav barre ---*/
-
 nav 
 {
     justify-content: space-between;

@@ -25,7 +25,7 @@ body
 /*--- Définition de la police pour les titres ---*/
 h1, h2 {font-family: "RalewayBold", sans-serif;}
 
-/*--- Mise en forme de la nav barre ---*/
+/*--- Mise en forme de la navbar ---*/
 nav 
 {
     justify-content: space-between;

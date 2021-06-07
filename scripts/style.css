@@ -68,13 +68,24 @@ nav ul li:hover
     border-top: 3px Solid #0065FC;
 }
 
-h1
+/*--- Mise en forme de la section main ---*/
+main
 {
-    font-size: 1.5em;
-    line-height: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-header p, header a {font-size: 1.25em;}
+section{width: 100%;}
+
+/*--- Mise en forme des titres du site ---*/
+h1{font-size: 1.5em; line-height: 2em;}
+
+/*--- Mise en forme du texte hors sections ---*/
+p, a {font-size: 1.25em;}
+
+.hebergements h2, .hebergements a, .hebergements p, .populaires h2, .populaires a, .populaires p{font-size: 1em;}
 
 /*--- Mise en forme du formulaire ---*/
 form, input, .fa-map-marker-alt
@@ -113,6 +124,7 @@ input[type="text"], input[type="text"]::placeholder
     width: 210px;
 }
 
+/*--- Mise en forme du bouton rechercher ---*/
 input[type="submit"]
 {
     width: 140px;
@@ -130,7 +142,7 @@ input[type="submit"]
     justify-content: space-between;
 }
 
-.filtres li {font-family: "RalewayBold"; }
+.filtres li {font-family: "RalewayBold";}
 
 .filtres li:not(:first-of-type)
 {
@@ -139,6 +151,11 @@ input[type="submit"]
     text-align: center;
     padding-right: 2em;
     overflow: hidden;
+}
+
+.filtres li:not(:first-of-type):hover
+{
+    border-color: #0065FC;
 }
 
 /* Mise en forme des logo*/
@@ -170,56 +187,73 @@ input[type="submit"]
     border-radius: 3em;
 }
 
+/*--- Placement des sections hebergements & populaires  ---*/
+.hebergements, .populaires
+{
+    margin: 2.5em 0;
+}
 
+/*--- Alignement des titres ---*/
+.hebergements h1, .populaires h1
+{
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
 
-
-/* ---- Mise en forme de la section Main du site ---- */
+.populaires h1
+{
+    padding-left: 2em;
+    padding-right: 2em;;
+}
 
 /*--- mise en forme de la section hebergements du site ---*/
-.hebergements
-{
-    margin: 3em 0 3em 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+.hebergements {width: 60%; padding: 0 3em 1.5em 3em;}
 
-.hebergements article {width: 60%;}
+.populaires {width: 30%;}
 
-.hebergements aside {width: 30%;}
+.hebergements, .populaires {background-color: #F2F2F2; border-radius: 1.5em;}
 
-.hebergements article, .hebergements aside
-{
-    background-color: #F2F2F2;
-    border-radius: 1.5em;
-}
+.prix {font-family: "RalewayBold", sans-serif;}
 
-.hebergements h2 {font-size: 1.24em;}
+/*--- Couleur des étoiles ---*/
+.fa-star {color: #0065FC;}
 
-.hebergements article {padding: 1.5em 3em 1.5em 3em;}
+.gris{color: #D9D9D9;}
 
-.hebergements article ul
+.hebergements .propositions
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1em 0 1em 0;
 }
 
-.hebergements ul li
+.hebergements article, .populaires article
 {
     background-color: #FFFFFF;
     border: 5px Solid #FFFFFF;
     border-radius: 1.5em;
-    margin-bottom: 2em;
     overflow: hidden;
     box-shadow: 2px 2px 5px #D9D9D9, -2px -2px 5px #D9D9D9;
 }
 
-.hebergements ul li:hover
+.hebergements article {margin-bottom: 2em;}
+
+.hebergements article:hover, .populaires article:hover
 {
     box-shadow: 5px 5px 8px #B9B9B9, -5px -5px 8px #B9B9B9;
+}
+
+.hebergements article a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.hebergements article a :not(img, i, span)
+{
+    padding: 0 0 0 0.8em;
+    line-height: 1.5em;
 }
 
 .hebergements article img
@@ -230,84 +264,71 @@ input[type="submit"]
     object-fit: cover;
 }
 
-.hebergements article a, .hebergements aside a
+/*--- Lien "Afficher plus" ---*/
+.hebergements .more
 {
-    text-decoration: none;
     color: #000000;
-}
-
-.hebergements article li a :not(img, i, span)
-{
-    padding: 0 0 0 0.8em;
-    line-height: 1.5em;
-}
-
-.prix {font-family: "RalewayBold", sans-serif;}
-
-/*Couleur des icones*/
-.hebergements .fa-star {color: #0065FC;}
-
-.hebergements .gris {color: #D9D9D9;}
-
-/* Lien "Afficher plus" */
-.more
-{
+    text-decoration: none;
     font-size: 1.25em;
     font-family: "RalewayBold";
 }
 
-.more:hover
+.hebergements .more:hover
 {
     color: #0065FC;
     text-decoration: underline;
     text-decoration-color: #0065FC;
 }
 
-/*--- mise en forme de la section "les plus populaires" du site ---*/
+/*--- Mis en forme de la section "Les plus Populaires" ---*/
 
-/*--- Mise en forme du container ---*/
-.hebergements aside{padding: 1.5em 0;}
-
-/*--- Mise en forme du titre ---*/
-.hebergements aside h1
+.populaires .topPropositions
 {
-    margin: 0 2em 1em 2em;
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.populaires h1
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-/*--- Mise en forme de la liste ---*/
-aside ul
+.populaires article
+{
+    margin: 1em;
+    width: 80%;
+}
+
+.populaires article a
 {
     display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap; 
-    align-items: center;
+    flex-direction: row; 
+    text-decoration: none;
+    color: #000000;
 }
 
-aside ul li a
+.populaires article a :not(img)
 {
-    display: flex;
-    flex-direction: row;
+    padding-top: 0.5em;
 }
 
-.hebergements aside ul li div
+.populaires div
 {
     position: relative;
-    padding: 1em 0 0 0 ;
 }
 
-.hebergements aside ul li a p:last-child
+.populaires article a p:last-child
 {
     position: absolute;
     bottom: 15px;
 }
 
-aside ul li {width: 80%;}
-
-aside img 
+.populaires article img 
 {
     width: 150px;
     height: 150px;

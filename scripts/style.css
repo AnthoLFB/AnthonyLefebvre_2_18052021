@@ -18,8 +18,13 @@
 /*--- Mise en forme du body ---*/
 body
 {
-    margin: 0 4em 0 4em;
     font-family: "Raleway", sans-serif;
+}
+
+/*--- Ajout des espaces pour chaques sections (hors footer) ---*/
+header, main
+{
+    margin: 0 4em 0 4em;
 }
 
 /*--- Définition de la police pour les titres ---*/

@@ -337,7 +337,6 @@ input[type="submit"]
 }
 
 /*---- Mise en forme de la section Activités ----*/
-
 .activites article
 {
     background-color: #FFFFFF;
@@ -346,6 +345,7 @@ input[type="submit"]
     box-shadow: 2px 2px 5px #D9D9D9, -2px -2px 5px #D9D9D9;
 }
 
+/*--- Mise en forme des liens ---*/
 .activites article a
 {
     color: #000000;
@@ -358,16 +358,42 @@ input[type="submit"]
     text-decoration: none;
 }
 
+/*--- Mise en forme des titres ---*/
 .activites h2
 {
     padding: 0.8em;
 }
 
+/*--- Mise en forme des images ---*/
 .activites article img
 {
     width: 100%;
+    object-fit: cover
 }
 
+.image1, .image4
+{
+    height: 550px;
+    width: auto;
+}
+
+.image2, .image5
+{
+    height: 300px;
+    width: auto;
+}
+
+.image3, .image6
+{
+    height: 200px;
+    width: auto;
+}
+
+.image1 img, .image4 img{height: 500px;}
+.image2 img, .image5 img{height: 250px;}
+.image3 img, .image6 img{height: 150px;}
+
+/*--- Mise en forme de la grille d'image ---*/
 .listeActivites 
 {
     margin-top: 1.5em;
@@ -394,29 +420,3 @@ input[type="submit"]
 .image5 { grid-area: image5; }
 
 .image6 { grid-area: image6; }
-
-
-.image1, .image4
-{
-    height: 550px;
-    width: auto;
-}
-
-.image2, .image5
-{
-    height: 300px;
-    width: auto;
-}
-
-.image3, .image6
-{
-    height: 200px;
-    width: auto;
-}
-
-.image1 img, .image4 img{width: 400px; height: 500px; object-fit: cover}
-
-
-.image2 img, .image5 img{width: 400px; height: 250px; object-fit: cover}
-.image3 img, .image6 img{width: 400px; height: 150px; object-fit: cover}
-

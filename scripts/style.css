@@ -93,7 +93,7 @@ p, a {font-size: 1.25em;}
 .hebergements h2, .hebergements a, .hebergements p, .populaires h2, .populaires a, .populaires p{font-size: 1em;}
 
 /*--- Mise en forme du formulaire ---*/
-form, input, .fa-map-marker-alt
+form, input, button,  .fa-map-marker-alt
 {
     font-family: "RalewayBold";
     font-size: 1.1em;
@@ -130,8 +130,9 @@ input[type="text"], input[type="text"]::placeholder
 }
 
 /*--- Mise en forme du bouton rechercher ---*/
-input[type="submit"]
+button[type="submit"]
 {
+    border: none;
     width: 140px;
     height: 50px;
     background-color: #0065FC;

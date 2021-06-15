@@ -1,0 +1,508 @@
+@media screen and (max-width: 1799px) 
+{
+    .filtres
+    {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1699px) 
+{
+    /*--- Rétrécissement des espaces pour chaques sections (hors footer) ---*/
+    header, main
+    {
+        margin: 0 2em 0 2em;
+    }
+
+    .hebergements article img, .populaire article img
+    {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 1599px) 
+{
+    /* Diminution de la taille des titres */
+    h1, footer h2
+    {
+        font-size: 1.25em;
+    }
+
+    /* Diminution de la taille pour la police d'écriture */
+    p, nav ul li a, a 
+    {
+        font-size: 1em;
+    }
+
+    /* Diminution des marges, agrandissement de la section */
+    .hebergements 
+    {
+        width: 65%;
+        padding: 0 2em 1.5em 2em;
+    }
+
+    /* Agrandissement des articles */
+    .hebergements article 
+    {
+        width: 30%;
+    }
+
+    /* Redimenssion des images */
+    .hebergements article img, .populaire article img 
+    {
+        width: 100%;
+    }
+
+    /* Diminution de la section */
+    .populaires 
+    {
+        width: 28%;
+    }
+
+    /* Agrandissement des articles */
+    .populaires article 
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1400px) 
+{
+    .reverseMobile
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1399px) 
+{
+    /* Inversement des deux sections populaires et hebergements pour correspondre à la maquette */
+    .reverseMobile
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* Reposissionnement des sections */
+    .hebergements, .populaires
+    {
+        width: 100%;
+        margin: 2em 0 2em 0;
+        padding: 1em 0 2em 0;
+    }
+
+    /*  Repositionnement des articles */
+    .populaires .topPropositions
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Redimenssionnement des articles */
+    .hebergements article, .populaires article
+    {
+        width: 30%;
+    }
+
+    .populaires article 
+    {
+        margin: 0;
+    }
+
+    /* Modification des titres */
+    .hebergements h1, .populaires h1, .more
+    {
+        padding: 1.5em 2em 1.5em 2em;
+    }
+
+    /* Alignement des articles avec les titres */
+    .hebergements .propositions, .populaires .topPropositions
+    {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    /*--- Section activités à Marseille ---*/
+
+    /* Redimenssion de la section */
+    .activites
+    {
+        height: 100%;
+    }
+    
+    /* Nouvelle disposition pour la grille avec les images */
+    .listeActivites 
+    {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;    
+        grid-template-areas: 
+            "image1 image2"
+            "image1 image3"
+            "image4 image5"
+            "image4 image6";  
+
+    }
+
+    /* Redimenssion automatique des articles */
+    .listeActivites article
+    {
+        width: auto;
+        height: auto;
+    }
+
+    /* Changement de la hauteur des images */
+    .image1 img, .image4 img{height: 590px;}
+    .image2 img, .image5 img{height: 250px;}
+    .image3 img, .image6 img{height: 250px;}
+}
+
+@media screen and (max-width: 1389px) 
+{
+    /* Redimenssionnement des articles */
+    .populaires article
+    {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1269px) 
+{
+    /* Redimenssion du footer */
+    footer
+    {
+        justify-content: space-around;
+    }
+
+
+    footer section
+    {
+        width: auto;
+        margin: 0;
+        padding: 2em 0 2em 0;
+    }
+}
+
+
+@media screen and (max-width: 1199px) 
+{
+    /* Redimenssionnement des filtres */
+    .filtres
+    {
+        width: 100%;
+    }
+
+    /* Modification de l'espace entre les sections */
+    .populaires 
+    {
+        padding: 0;
+    }
+
+    .hebergements
+    {
+        padding-bottom: 2em;
+    }
+
+    /* Modification de la façon d'afficher les resultats */
+    .populaires .topPropositions
+    {
+        flex-direction: row;
+        margin: inherit;
+        justify-content: space-between;
+    }
+
+    /* Redimenssionnement des articles et placements des articles */
+    .populaires article
+    {
+        width: 100%;
+        margin: 0 2em 2em 2em;
+    }
+
+    .populaires article:last-child
+    {
+        margin-bottom: 1em;
+    }
+
+    /* Diminution de l'espace entre le titre et les articles */
+    .populaires h1
+    {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 919px) 
+{
+    /*repositionnement des filtres*/
+    .filtres li:not(:first-of-type) 
+    {
+        padding-right: 1em;
+    }
+}
+
+@media screen and (max-width: 859px) 
+{
+    /* Centrage du formulaire */
+    form
+    {
+        margin: 3em auto 2em auto;
+    }
+
+    /*repositionnement des filtres*/
+    .filtres
+    {
+        flex-wrap: wrap;
+    }
+
+    .filtres li:first-child
+    {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .filtres li:not(:first-of-type) 
+    {
+        text-align: inherit;
+        margin: 1em;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 839px) 
+{
+    /* Ajustement de la taille des articles */
+    .hebergements article 
+    {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 699px)
+{
+    /* Modification de la navbar */
+    nav
+    {
+        flex-wrap: wrap;
+        font-size: 1.25em;
+    }
+
+    nav ul
+    {
+        width: 100%;
+    }
+
+    nav ul li:not(:last-child)
+    {
+        text-align: center;
+        width: 50%;
+        margin-top: 1em;
+        padding: 2em 0 2em 0;
+        border-bottom: 3px Solid #F2F2F2;
+    }
+
+    nav ul li:first-child
+    {
+        border-top: inherit;
+        border-bottom: 3px Solid #0065FC;
+    }
+
+    nav ul li:hover
+    {
+        border-top: inherit;
+        border-bottom: 3px Solid #0065FC;
+    }
+
+    nav ul li:last-child
+    {
+        position: absolute;
+        right: 2em;
+        top: 1.5em;
+    }
+
+    /* réduction de l'espaces entre les photos de la grille */
+    .listeActivites
+    {
+        gap: 25px;
+    }
+}
+
+
+@media screen and (max-width: 599px)
+{
+    /* Retrait des marges */
+    header, main
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header img, .parametres h1, .parametres p, .activites
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav ul li:last-child 
+    {
+        right: 20px;
+    }
+
+    /* Retrait de l'arrondi des bordures */
+    .hebergements, .populaires
+    {
+        border-radius: 0;
+        margin: 1em 0 1em 0;
+    }
+
+    /* Retrait du background */
+    .hebergements
+    {
+        background-color: #FFFFFF;
+    }
+
+    /* Ajustement de la taille des articles */
+    .hebergements article, .populaires article
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    footer section
+    {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 529px)
+{
+    /* Placement de l'image de la navbar  */
+    nav img,  .filtres li:last-child
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Diminution des marges */
+    .hebergements .propositions, .populaires article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Modification des filtres */
+    .filtres li:first-child
+    {
+        text-transform: inherit;
+        text-align: left;
+    }
+
+    .filtres li:not(:first-of-type) 
+    {
+        margin: 0.5em auto;
+        width: 50%;
+    }
+
+    /* Modification du format pour la grille */
+    .listeActivites 
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "image1" 
+        "image2"
+        "image3"
+        "image4"
+        "image5"
+        "image6";
+    }
+
+    .image1 img, .image2 img, .image3 img, .image4 img, .image5 img, .image6 img{height: 200px;}
+}
+
+
+@media screen and (min-width: 480px)
+{
+    /* Au dessus de 480px on affiche le texte */
+    form .fa-search
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px)
+{
+    /* Modification du formulaire pour afficher une loupe à la place du texte */
+    form
+    {
+        width: 420px;
+    }
+
+    form span
+    {
+        display: none;
+    }
+
+    input[type="text"]
+    {
+        width: 285px;
+    }
+
+    button[type="submit"] 
+    {
+        width: 60px;
+        border-radius: 1em;
+    }
+
+    /* Ajustement des filtres */
+    .filtres li:not(:first-of-type) 
+    {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 429px)
+{
+    form
+    {
+        width: 320px;
+    }
+
+    input[type="text"]
+    {
+        width: 185px;
+    }
+
+    button[type="submit"] 
+    {
+        width: 60px;
+        border-radius: 1em;
+    }
+}
+
+@media screen and (max-width: 329px)
+{
+    form
+    {
+        width: 280px;
+    }
+
+    input[type="text"]
+    {
+        width: 160px;
+    }
+
+    button[type="submit"] 
+    {
+        width: 60px;
+        border-radius: 1em;
+    }
+}

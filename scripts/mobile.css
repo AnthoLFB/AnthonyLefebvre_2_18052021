@@ -3,7 +3,6 @@
 {
     body
     {
-        background-color: white !important;
         width: 2300px;
         margin: 0 auto;
     }
@@ -23,11 +22,6 @@
 /* X-Large */
 @media screen and (min-width: 1200px)
 {
-    body
-    {
-        background-color: white !important;
-    }
-
     .filtres
     {
         width: 1060px;

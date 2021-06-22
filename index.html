@@ -15,8 +15,8 @@
             <nav>
                 <img src="images/logo/Reservia.png" alt="Logo Réservia" srcset="images/logo/Reservia.svg"/>
                 <ul>
-                    <li><a href=#>Hébergements</a></li>
-                    <li><a href=#>Activités</a></li>
+                    <li><a href=#hebergements>Hébergements</a></li>
+                    <li><a href=#activites>Activités</a></li>
                     <li><a href=#>S'inscrire</a></li>
                 </ul>
             </nav>
@@ -28,7 +28,7 @@
 
                 <p>En plein centre ville ou en pleine nature</p>
 
-                <form action="" method="">
+                <form action="traitement.php" method="POST">
                     <i class="fas fa-map-marker-alt"></i>
                     <input type="text" name="name" id="name" placeholder="Marseille, France" required>
                     
@@ -51,7 +51,10 @@
 
             <div class="reverseMobile">
                 <section class="hebergements">                  
-                
+                    
+                    <!--Ancre-->
+                    <div id="hebergements"></div>
+
                     <h1>Hébergements à Marseille</h1>
     
                     <div class="propositions">
@@ -214,6 +217,9 @@
 
                 <h1>Activités à Marseille</h1>
 
+                <!--Ancre-->
+                <div id="activites"></div>
+                
                 <div class="listeActivites">
                     <article  class="image1">
                         <a href="#">

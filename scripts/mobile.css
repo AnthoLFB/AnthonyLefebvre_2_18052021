@@ -1,83 +1,78 @@
-@media screen and (max-width: 1799px) 
+/* XX-Large */
+@media screen and (min-width: 1881px)
 {
+    body
+    {
+        background-color: white !important;
+        width: 2300px;
+        margin: 0 auto;
+    }
+
+    /* Diminution de la taille de la liste des filtres */
     .filtres
     {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 1699px) 
-{
-    /*--- Rétrécissement des espaces pour chaques sections (hors footer) ---*/
-    header, main
-    {
-        margin: 0 2em 0 2em;
+        width: 60%;
     }
 
-    .hebergements article img, .populaire article img
-    {
-        width: 270px;
-    }
-}
-
-@media screen and (max-width: 1599px) 
-{
-    /* Diminution de la taille des titres */
-    h1, footer h2
-    {
-        font-size: 1.25em;
-    }
-
-    /* Diminution de la taille pour la police d'écriture */
-    p, nav ul li a, a 
-    {
-        font-size: 1em;
-    }
-
-    /* Diminution des marges, agrandissement de la section */
-    .hebergements 
-    {
-        width: 65%;
-        padding: 0 2em 1.5em 2em;
-    }
-
-    /* Agrandissement des articles */
-    .hebergements article 
-    {
-        width: 30%;
-    }
-
-    /* Redimenssion des images */
-    .hebergements article img, .populaire article img 
+    .hebergements article img 
     {
         width: 100%;
     }
+}
 
-    /* Diminution de la section */
-    .populaires 
+/* X-Large */
+@media screen and (min-width: 1200px)
+{
+    body
     {
-        width: 28%;
+        background-color: white !important;
     }
 
-    /* Agrandissement des articles */
-    .populaires article 
+    .filtres
     {
-        width: 90%;
+        width: 1060px;
     }
 }
 
-@media screen and (min-width: 1400px) 
+/* Large */
+@media screen and (max-width: 1199px)
 {
-    .reverseMobile
+    /* Diminution des marges */
+    header, main
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-}
 
-@media screen and (max-width: 1399px) 
-{
+    header img, .parametres h1, .parametres p, .activites
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /*repositionnement des filtres*/
+    .filtres
+    {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .filtres li:first-child
+    {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .filtres li:not(:first-of-type) 
+    {
+        text-align: inherit;
+        margin: 1em;
+        width: 40%;
+    }
+
     /* Inversement des deux sections populaires et hebergements pour correspondre à la maquette */
     .reverseMobile
     {
@@ -97,18 +92,20 @@
     .populaires .topPropositions
     {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     /* Redimenssionnement des articles */
-    .hebergements article, .populaires article
+    .hebergements article
     {
         width: 30%;
     }
 
     .populaires article 
     {
-        margin: 0;
+        width: 90%;
+        margin: 1em 0 1em 0;
     }
 
     /* Modification des titres */
@@ -124,6 +121,7 @@
         margin-right: 2em;
     }
 
+    
     /*--- Section activités à Marseille ---*/
 
     /* Redimenssion de la section */
@@ -159,130 +157,26 @@
     .image1 img, .image4 img{height: 590px;}
     .image2 img, .image5 img{height: 250px;}
     .image3 img, .image6 img{height: 250px;}
-}
 
-@media screen and (max-width: 1389px) 
-{
-    /* Redimenssionnement des articles */
-    .populaires article
-    {
-        width: 30%;
-    }
-}
-@media screen and (max-width: 1269px) 
-{
-    /* Redimenssion du footer */
+    /* Passage du footer en column */
     footer
     {
-        justify-content: space-around;
+        flex-direction: column;
+        text-align: left;
     }
-
 
     footer section
     {
-        width: auto;
-        margin: 0;
-        padding: 2em 0 2em 0;
-    }
-}
-
-
-@media screen and (max-width: 1199px) 
-{
-    /* Redimenssionnement des filtres */
-    .filtres
-    {
         width: 100%;
-    }
-
-    /* Modification de l'espace entre les sections */
-    .populaires 
-    {
-        padding: 0;
-    }
-
-    .hebergements
-    {
-        padding-bottom: 2em;
-    }
-
-    /* Modification de la façon d'afficher les resultats */
-    .populaires .topPropositions
-    {
-        flex-direction: row;
-        margin: inherit;
-        justify-content: space-between;
-    }
-
-    /* Redimenssionnement des articles et placements des articles */
-    .populaires article
-    {
-        width: 100%;
-        margin: 0 2em 2em 2em;
-    }
-
-    .populaires article:last-child
-    {
-        margin-bottom: 1em;
-    }
-
-    /* Diminution de l'espace entre le titre et les articles */
-    .populaires h1
-    {
-        padding-bottom: 0;
-    }
-}
-
-@media screen and (max-width: 919px) 
-{
-    /*repositionnement des filtres*/
-    .filtres li:not(:first-of-type) 
-    {
-        padding-right: 1em;
-    }
-}
-
-@media screen and (max-width: 859px) 
-{
-    /* Centrage du formulaire */
-    form
-    {
-        margin: 3em auto 2em auto;
-    }
-
-    /*repositionnement des filtres*/
-    .filtres
-    {
-        flex-wrap: wrap;
-    }
-
-    .filtres li:first-child
-    {
-        font-size: 1.25em;
-        text-transform: uppercase;
         text-align: center;
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    .filtres li:not(:first-of-type) 
-    {
-        text-align: inherit;
-        margin: 1em;
-        width: 40%;
+        padding: 0;
+        margin: 2em 0 2em 0;
+        
     }
 }
 
-@media screen and (max-width: 839px) 
-{
-    /* Ajustement de la taille des articles */
-    .hebergements article 
-    {
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 699px)
+/* Small */
+@media screen and (max-width: 768px)
 {
     /* Modification de la navbar */
     nav
@@ -320,36 +214,133 @@
     nav ul li:last-child
     {
         position: absolute;
-        right: 2em;
+        right: 20px;
         top: 1.5em;
     }
 
-    /* réduction de l'espaces entre les photos de la grille */
+    /* Centrage du formulaire */
+    form
+    {
+        margin: 3em auto 2em auto;
+    }
+
+    /* Ajustements des filtres */
+    .filtres 
+    {
+        justify-content: center;
+    }
+
+    .filtres li:not(:first-of-type) 
+    {
+        width: 50%;
+    }
+
+    /* Ajustement de la taille des articles */
+    .hebergements article 
+    {
+        width: 45%;
+    }
+
+    /* Modification de l'espace entre les photos de la grille */
     .listeActivites
     {
-        gap: 25px;
+        gap: 20px;
     }
 }
 
 
-@media screen and (max-width: 599px)
+@media screen and (min-width: 576px)
 {
-    /* Retrait des marges */
-    header, main
+    /* Au dessus de 576px on affiche le texte */
+    form .fa-search
     {
-        margin-left: 0;
-        margin-right: 0;
+        display: none;
+    }
+}
+
+/* Extra small */
+@media screen and (max-width: 575px)
+{
+    nav img 
+    {
+        margin-top: 1.5em;
+        width: 30%;
     }
 
-    header img, .parametres h1, .parametres p, .activites
+    nav ul li 
     {
-        margin-left: 20px;
-        margin-right: 20px;
+        padding: 0em;
     }
 
     nav ul li:last-child 
     {
+        top: 2.3em;
         right: 20px;
+    }
+
+    /* Modification de la taille de la police pour la navbar */
+    nav ul li a 
+    {
+        font-size: 1em;
+    }
+
+    /* Modification de la taille de la police pour les textes et liens de la page */
+    p, a 
+    {
+        font-size: 1em;
+    }
+
+    /* Modification de la taille de police pour le formulaire de recherche */
+    form, input, button, .fa-map-marker-alt 
+    {
+        font-size: 1em;
+    }
+
+    /* Affichage de l'icone à la place du texte pour le formulaire */
+    form span
+    {
+        display: none;
+    }
+
+    form .fa-search
+    {
+        display: inherit;
+    }
+
+    /* Modification des filtres */
+    .filtres li:first-child
+    {
+        text-transform: inherit;
+        text-align: left;
+    }
+
+    .filtres li:not(:first-of-type) 
+    {
+        margin: 0.5em auto;
+        width: 80%;
+    }
+
+    .parametres p:last-child
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fa-info 
+    {
+        padding: 3px 9px 3px 9px;
+    }
+
+    .parametres p:last-child i
+    {
+        margin-right: 20px;
+    }
+
+    /* Retrait des marges sur les sections */
+    header, main
+    {
+        margin: 0;
     }
 
     /* Retrait de l'arrondi des bordures */
@@ -365,50 +356,32 @@
         background-color: #FFFFFF;
     }
 
+    /* Alignement des titres */
+    .hebergements h1, .populaires h1, .more
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hebergements .propositions, .populaires .topPropositions {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     /* Ajustement de la taille des articles */
     .hebergements article, .populaires article
     {
         width: 100%;
     }
 
-    footer
-    {
-        flex-direction: column;
-        text-align: left;
+    .populaires article a p:last-child {
+        position: relative;
     }
 
-    footer section
+    .populaires article img 
     {
-        margin-left: 20px;
-    }
-}
-
-@media screen and (max-width: 529px)
-{
-    /* Placement de l'image de la navbar  */
-    nav img,  .filtres li:last-child
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    /* Diminution des marges */
-    .hebergements .propositions, .populaires article {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    /* Modification des filtres */
-    .filtres li:first-child
-    {
-        text-transform: inherit;
-        text-align: left;
-    }
-
-    .filtres li:not(:first-of-type) 
-    {
-        margin: 0.5em auto;
-        width: 50%;
+        width: 125px;
+        height: 200px;
     }
 
     /* Modification du format pour la grille */
@@ -426,83 +399,27 @@
     }
 
     .image1 img, .image2 img, .image3 img, .image4 img, .image5 img, .image6 img{height: 200px;}
-}
 
-
-@media screen and (min-width: 480px)
-{
-    /* Au dessus de 480px on affiche le texte */
-    form .fa-search
-    {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 479px)
-{
-    /* Modification du formulaire pour afficher une loupe à la place du texte */
+    /* Modification du formulaire */
     form
     {
-        width: 420px;
+        width: 90%;
     }
 
-    form span
+    .fa-map-marker-alt 
     {
-        display: none;
+        margin-right: 0;
     }
 
     input[type="text"]
     {
-        width: 285px;
+        width: 80%;
+        padding: 10px 0 10px 4%;
     }
 
     button[type="submit"] 
     {
-        width: 60px;
-        border-radius: 1em;
-    }
-
-    /* Ajustement des filtres */
-    .filtres li:not(:first-of-type) 
-    {
-        width: 65%;
-    }
-}
-
-@media screen and (max-width: 429px)
-{
-    form
-    {
-        width: 320px;
-    }
-
-    input[type="text"]
-    {
-        width: 185px;
-    }
-
-    button[type="submit"] 
-    {
-        width: 60px;
-        border-radius: 1em;
-    }
-}
-
-@media screen and (max-width: 329px)
-{
-    form
-    {
-        width: 280px;
-    }
-
-    input[type="text"]
-    {
-        width: 160px;
-    }
-
-    button[type="submit"] 
-    {
-        width: 60px;
-        border-radius: 1em;
+        width: 15%;
+        border-radius: 10px;
     }
 }

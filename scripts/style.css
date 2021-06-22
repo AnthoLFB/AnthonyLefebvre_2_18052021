@@ -73,8 +73,8 @@ nav ul li:hover
     border-top: 3px Solid #0065FC;
 }
 
-/*--- Mise en forme de la section main ---*/
-main
+/*--- Mise en forme de la section main (reverseMobile sera utile pour le responsive)---*/
+main, .reverseMobile
 {
     display: flex;
     flex-direction: row;
@@ -213,9 +213,14 @@ button[type="submit"]
 }
 
 /*--- mise en forme de la section hebergements du site ---*/
-.hebergements {width: 60%; padding: 0 3em 1.5em 3em;}
+.hebergements 
+{
+    
+    width: calc(65% - 8em); 
+    padding: 0 3em 1.5em 3em;
+}
 
-.populaires {width: 30%;}
+.populaires {width :35%}
 
 .hebergements, .populaires {background-color: #F2F2F2; border-radius: 1.5em;}
 
@@ -237,13 +242,13 @@ button[type="submit"]
 .hebergements article, .populaires article
 {
     background-color: #FFFFFF;
-    border: 5px Solid #FFFFFF;
+    border: 5px Solid transparent;
     border-radius: 1.5em;
     overflow: hidden;
     box-shadow: 2px 2px 5px #D9D9D9, -2px -2px 5px #D9D9D9;
 }
 
-.hebergements article {margin-bottom: 2em;}
+.hebergements article {margin-bottom: 2em; width: calc(30% - 2px);}
 
 .hebergements article:hover, .populaires article:hover
 {
@@ -256,7 +261,7 @@ button[type="submit"]
     color: #000000;
 }
 
-.hebergements article a :not(img, i, span)
+.hebergements article a :not(img):not(i):not(span)
 {
     padding: 0 0 0 0.8em;
     line-height: 1.5em;
@@ -264,7 +269,7 @@ button[type="submit"]
 
 .hebergements article img
 {
-    width: 300px;
+    width: 100%;
     height: 150px;
     padding-bottom: 0.8em;
     object-fit: cover;
@@ -307,7 +312,7 @@ button[type="submit"]
 .populaires article
 {
     margin: 1em;
-    width: 80%;
+    width: calc(90% - 1em);
 }
 
 .populaires article a
@@ -336,6 +341,7 @@ button[type="submit"]
 
 .populaires article img 
 {
+    flex-shrink: 0;
     width: 150px;
     height: 150px;
     padding-right: 1em;
@@ -379,13 +385,13 @@ button[type="submit"]
 
 .image1, .image4
 {
-    height: 550px;
+    height: 570px;
     width: auto;
 }
 
 .image2, .image5
 {
-    height: 300px;
+    height: 320px;
     width: auto;
 }
 
@@ -404,7 +410,6 @@ button[type="submit"]
 {
     margin-top: 1.5em;
     margin-bottom: 3.5em;
-    height: 550px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

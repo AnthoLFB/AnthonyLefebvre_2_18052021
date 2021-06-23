@@ -1,9 +1,9 @@
 /* XX-Large */
-@media screen and (min-width: 1881px)
+@media screen and (min-width: 2500px)
 {
     body
     {
-        width: 2300px;
+        width: 2500px;
         margin: 0 auto;
     }
 
